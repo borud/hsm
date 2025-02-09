@@ -20,6 +20,8 @@ var opt struct {
 	Debug     bool   `kong:"name='debug',help='turn on HTTPS debugging'"`
 
 	Info      infoCmd      `kong:"cmd,name='info',help='get information on NetHSM instance'"`
+	Lock      lockCmd      `kong:"cmd,name='lock',help='lock NetHSM instance'"`
+	Unlock    unlockCmd    `kong:"cmd,name='unlock',help='unlock NetHSM instance'"`
 	Provision provisionCmd `kong:"cmd,name='provision',help='Provision NetHSM instance'"`
 	User      userCmd      `kong:"cmd,name='user',help='user commands'"`
 }

@@ -17,11 +17,12 @@ This makes use of the generated API client <https://github.com/borud/nethsm>.
 |--------------|--------|
 | Info         | OK     |
 | Provision    | OK     |
-| Unlock       | -      |
+| Lock         | OK     |
+| Unlock       | OK     |
+| Health       | -      |
 | User         | OK     |
 | Namespaces   | -      |
 | Keys         | -      |
 | Config       | -      |
-| Health       | -      |
 | System       | -      |
 | Random       | -      |
