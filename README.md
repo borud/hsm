@@ -6,3 +6,7 @@ This is a command line interface for the Nitrokey NetyHSM. Note that this is:
 - A work in progress
 
 I'm doing this in my spare time so progress may be somewhat irregular.
+
+## Dependencies
+
+This makes use of the generated API client <https://github.com/borud/nethsm>.
