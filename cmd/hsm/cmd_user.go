@@ -37,7 +37,7 @@ func (a *addUserCmd) Run() error {
 		// make sure hte role is valid
 		role := nethsm.UserRole(a.Role)
 		if !role.IsValid() {
-			return fmt.Errorf("unvalid user role [%s], valid roles are: %v", a.Role, nethsm.AllowedUserRoleEnumValues)
+			return fmt.Errorf("invalid user role [%s], valid roles are: %v", a.Role, nethsm.AllowedUserRoleEnumValues)
 		}
 
 		userPostData := nethsm.NewUserPostData(a.RealName, role, a.PassPhrase)

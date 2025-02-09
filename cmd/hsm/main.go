@@ -17,9 +17,10 @@ var opt struct {
 	Username  string `kong:"name='user',help='Username'"`
 	Password  string `kong:"name='pass',help='Password'"`
 	SkipTLS   bool   `kong:"name='skip-tls',help='skip TLS verification',default=true"` // remove default
-	Debug     bool   `kong:"name='debug',help='turn on HTTPS debugging'"`
+	// Debug     bool   `kong:"name='debug',help='turn on HTTPS debugging'"`
 
 	Info      infoCmd      `kong:"cmd,name='info',help='get information on NetHSM instance'"`
+	Health    healthCmd    `kong:"cmd,name='health',help='NetHSM health commands'"`
 	Lock      lockCmd      `kong:"cmd,name='lock',help='lock NetHSM instance'"`
 	Unlock    unlockCmd    `kong:"cmd,name='unlock',help='unlock NetHSM instance'"`
 	Provision provisionCmd `kong:"cmd,name='provision',help='Provision NetHSM instance'"`

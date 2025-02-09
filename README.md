@@ -19,7 +19,7 @@ This makes use of the generated API client <https://github.com/borud/nethsm>.
 | Provision    | OK     |
 | Lock         | OK     |
 | Unlock       | OK     |
-| Health       | -      |
+| Health       | OK     |
 | User         | OK     |
 | Namespaces   | -      |
 | Keys         | -      |
