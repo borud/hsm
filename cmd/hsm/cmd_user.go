@@ -46,7 +46,7 @@ func (a *addUserCmd) Run() error {
 			return fmt.Errorf("failed to create user [%s] res[%+v]: %w", a.ID, res, err)
 		}
 
-		slog.Info("created user", "userID", a.ID)
+		slog.Info("created user", "id", a.ID)
 		return nil
 	})
 }

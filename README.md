@@ -21,7 +21,7 @@ This makes use of the generated API client <https://github.com/borud/nethsm>.
 | Unlock       | OK     |
 | Health       | OK     |
 | User         | OK     |
-| Namespaces   | -      |
+| Namespaces   | OK     |
 | Keys         | -      |
 | Config       | -      |
 | System       | -      |

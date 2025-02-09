@@ -12,11 +12,11 @@ import (
 )
 
 var opt struct {
-	APIURL    string `kong:"name='api',help='NetHSM REST Endpoint URL',default='https://127.0.0.1:8443/api/v1'"`
-	Namespace string `kong:"name='ns',help='Namespace'"`
-	Username  string `kong:"name='user',help='Username'"`
-	Password  string `kong:"name='pass',help='Password'"`
-	SkipTLS   bool   `kong:"name='skip-tls',help='skip TLS verification',default=true"` // remove default
+	APIURL   string `kong:"name='api',help='NetHSM REST Endpoint URL',default='https://127.0.0.1:8443/api/v1'"`
+	NS       string `kong:"name='ns',help='Namespace'"`
+	Username string `kong:"name='user',help='Username'"`
+	Password string `kong:"name='pass',help='Password'"`
+	SkipTLS  bool   `kong:"name='skip-tls',help='skip TLS verification',default=true"` // remove default
 	// Debug     bool   `kong:"name='debug',help='turn on HTTPS debugging'"`
 
 	Info      infoCmd      `kong:"cmd,name='info',help='get information on NetHSM instance'"`
@@ -25,6 +25,7 @@ var opt struct {
 	Unlock    unlockCmd    `kong:"cmd,name='unlock',help='unlock NetHSM instance'"`
 	Provision provisionCmd `kong:"cmd,name='provision',help='Provision NetHSM instance'"`
 	User      userCmd      `kong:"cmd,name='user',help='user commands'"`
+	Namespace namespaceCmd `kong:"cmd,name='ns',help='namespace commands'"`
 }
 
 func main() {
