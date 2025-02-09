@@ -10,3 +10,18 @@ I'm doing this in my spare time so progress may be somewhat irregular.
 ## Dependencies
 
 This makes use of the generated API client <https://github.com/borud/nethsm>.
+
+## Progress
+
+| API category | Status |
+|--------------|--------|
+| Info         | OK     |
+| Provision    | OK     |
+| Unlock       | -      |
+| User         | OK     |
+| Namespaces   | -      |
+| Keys         | -      |
+| Config       | -      |
+| Health       | -      |
+| System       | -      |
+| Random       | -      |
